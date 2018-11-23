@@ -1,0 +1,48 @@
+<html>
+<head>
+	<link rel="stylesheet" href="style.css" type="text/css">
+	<title>QuickAdmin - UAC Whitelist / Elevated Shortcut / Elevate and de-Elevate</title>
+</head>
+<body>
+	<table id="navbar">
+		<tr>
+		<td id="logo"><a href="index.html"></a></td>
+		<td><a href="index.html" class="selected">Introduction</a></td>
+		<td><a href="features.html">Features</a></td>
+		<td><a href="downloads.html">Downloads</a></td>
+		<td><a href="updatelogs.html">Update logs</a></td>
+		<td><a href="contactme.html">Contact me</a></td>
+		</tr>
+	</table>
+	<div class="bigtext indent">
+	<div style="float:left;"><img src="uac.png" style="float:left;"/>
+	<a href="http://windows.microsoft.com/en-my/windows7/products/features/user-account-control">UAC (User Account Control)</a> first introduces in Windows Vista. 
+	Any time a program wants to make a major change to your computer, UAC lets you know and asks for permission. However, there is something wrong.
+	</div>
+	<div style="clear:both;"/><p>
+	1) When I click it, I mean it<br>
+	<div class="text indent">
+	If I just double-click on an application, and UAC asks if I want to run the program as administrator, it is OK.<br>
+	However, when I click on "Run as Administrator" in the context menu, I mean it!<br>
+	Regardless whatever crap UAC wants to tell me, I just want to run that application as administrator. That is it. WHY UAC STILL ASKS ME???<br>
+	</div><p>
+	2) UAC wouldn't let you proceed when it is checking the digital signature<br>
+	<div class="text indent">
+	UAC thinks its algorithm is fast, but it is not if your computer is not fast enough or the application you launched is huge.<br>
+	It is reasonable to take time, to tell user whether the application is signed by Windows, or published by verified publisher. However, why don't let users proceed at their own risk, or at least, cancel the operation?<br>
+	<img src="analyzing.png"/><br>
+	Try to think of this: accidentally launched a huge application around 1GB, want to cancel the operation, NO WAY, you need to wait UAC analysis done, to tell you whether it's safe or not, before you can cancel the operation.<br>
+	</div><p>
+	3) Whitelist, where is the whitelist?<br>
+	<div class="text indent">
+	There is no way for you to trust an application, to allow them run elevated without being prompted by UAC all the time, unless you use 3rd party software, such as QuickAdmin.<br>
+	Honestly, Windows is absolutely capable to implement a safe and fast whitelist feature. Try to think of Win7, if you try to launch msconfig.exe, it just launches, no interruption by UAC. Isn't it wonderful to have a whitelist? But Micro$oft decided to hold this off, only certain Windows built-in applications have been whitelisted. Maybe they try to make money out of this in the next version of Windows?<br>
+	</div><p>
+	Thus QuickAdmin comes to rescue...<br>
+	<div class="indent">
+	<img src="main.png"/>
+	</div><p>
+	Please allow me to introduce my work, QuickAdmin. It solves the problems I have mentioned above. You may check out its <a href="features.html">features</a> to understand it better.<p>
+	</div>
+</body>
+</html>
